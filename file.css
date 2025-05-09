@@ -1,0 +1,56 @@
+/* Reset and base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fixed NavBar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  
+  #navbar.scrolled {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9900;
+    transform: scale(1.1);
+  }
+  
+  /* Page sections */
+  section {
+    height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
